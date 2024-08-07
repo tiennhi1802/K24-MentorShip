@@ -18,10 +18,25 @@
   </tr>
 </table>
 
-
-
-
 #### Question 2 - Calculate the sum of all odd numbers in the array
+<table>
+  <tr>
+    <td style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/eb715d41-fce1-4d42-9484-fd3fba8a05dd" alt="Image 1">
+    </td>
+    <td style="text-align: center;">
+      <img src="https://github.com/user-attachments/assets/bcb3aa76-46af-48dc-893e-599f984cf89f" alt="Image 2">
+    </td>
+  </tr>
+  <tr>
+    <td >
+      <figcaption> main Funtion </figcaption>
+    </td>
+    <td>
+      <figcaption> calSumOddNum Function </figcaption>
+    </td>
+  </tr>
+</table>
 #### Question 3 - Calculate the sum of all prime numbers in the array
 #### Question 4 - Find the minimum and maximum values of the array
 #### Question 5 - Sort the array in ascending and descending order
