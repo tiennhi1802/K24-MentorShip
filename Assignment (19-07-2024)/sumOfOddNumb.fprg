@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="ThinkPad"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-08-07 09:49:01 SA"/>
+        <attribute name="created" value="VGhpbmtQYWQ7SU5URVJOLU5ISUxFOzIwMjQtMDgtMDY7MDU6MTE6MjggQ0g7MjkyOQ=="/>
+        <attribute name="edited" value="VGhpbmtQYWQ7SU5URVJOLU5ISUxFOzIwMjQtMDgtMDc7MDk6NDk6MDEgU0E7MjszMDU0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter value for n&quot;" newline="True"/>
+            <input variable="n"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="calSumOddNumb(n)"/>
+            <output expression="&quot;sum = &quot; &amp; sum" newline="True"/>
+        </body>
+    </function>
+    <function name="calSumOddNumb" type="Integer" variable="sum">
+        <parameters>
+            <parameter name="a" type="Integer" array="False"/>
+        </parameters>
+        <body>
+            <declare name="b" type="Integer" array="True" size="a"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="0" end="a - 1" direction="inc" step="1">
+                <assign variable="b[i]" expression="RANDOM(10)"/>
+                <if expression="b[i] % 2 = 0">
+                    <then/>
+                    <else>
+                        <output expression="&quot;Odd number is: &quot; &amp; b[i]" newline="True"/>
+                        <assign variable="sum" expression="sum + b[i]"/>
+                    </else>
+                </if>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
